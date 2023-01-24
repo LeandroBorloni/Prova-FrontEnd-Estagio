@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Gotham HTF';
+    font-weight: 400;
+    src: url(fonts/GothamHTF-Book.otf) format(truetype);
+}
+ 
+@font-face {
+    font-family: 'Gotham HTF-Medium';
+    font-weight: 500;
+    src: url(fonts/GothamHTF-Medium.otf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Gotham HTF-Bold';
+    font-weight: 700;
+    src: url(fonts/GothamHTF-Bold.otf) format(truetype);
+}
+
+
+/* IMAGEM BACKGROUND*/
+header {
+    display: inline-block;
+    width: 100%;
+    height: 1088px;
+    left: 0px;
+    top: 0px;   
+    background: url(background.png);
+    min-width: 1592px;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: 3211px;
+    background: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* BARRA DE ROLAGEM */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #151819;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ED145B;
+    border-radius: 4px;
+}
+
+
+/* MENU */
+.menubar {
+    display: inline-block;
+    width: 100%;
+    min-width: 1592px;
+    height: 90px;
+    background: #151819;
+}
+
+
+.logoMenuBar {
+    display: inline-block;
+    width: 33.5%;
+    box-sizing: border-box;
+    text-align: right;
+    padding-right: 130px;
+    margin-top: 20px;
+}
+
+.navMenuBar {
+    display: inline-block;
+    width: 40%;
+    min-width: 570px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.botaoMenuBar {
+    display: inline-block;
+    width: 26%;
+    box-sizing: border-box;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    font-family: 'Gotham HTF-Medium';
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-right: 80px;
+    text-decoration: none;
+
+    color: #91A3AD;
+}
+
+button {
+    font-family: 'Gotham HTF-Medium';
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+}
+
+.botao {
+    width: 150px;
+    height: 40px;
+    top: 26px;
+    color: #FFFFFF;
+    background:#ED145B ;
+    border: 2px solid #ED145B;
+}
+
+.botao:hover{
+    transform: skew(-10deg);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 1088px;
+    min-width: 1422px;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-descricao {
+    margin-top: 260px;
+
+}
+
+.header-acoes {
+    margin-top: 182px;
+}
+
+.titulo-header {
+    font-family: 'Gotham HTF-Medium';
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #91A3AD;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.texto-header {
+    font-family: 'Gotham HTF-Medium';
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #91A3AD;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botao-2 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    border: 2px solid #ED145B;
+    background-color: transparent;
+    color: #ED145B;
+    margin-top: 100px;
+}
+
+.botao-2:hover{
+    background-color: #ED145B;
+    color: #FFFFFF;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.scroll-texto {
+    font-family: 'Gotham HTF-Medium';
+    font-size: 9px;
+    line-height: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #91A3AD;
+    display: block;
+    margin-top: 20px;
+}
+
+.seta-esq {
+    position: absolute;
+    width: 29.44px;
+    margin-left: 9px;
+    margin-top: 30px;
+    border: 1px solid #ED145B;
+    transform: rotate(-135deg);
+}
+
+.seta-dir {
+    position: absolute;
+    width: 29.44px;
+    margin-top: 30px;
+    margin-left: 16px;
+    border: 1px solid #ED145B;
+    transform: rotate(-45deg);
+}
+
+.header-acoes-scroll-esq {
+    position: relative;
+    display: inline-block;
+    width: 47%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.header-acoes-scroll-dir {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+
+}
+
+.scroll-down {
+    text-decoration: none;
+}
+
+
+/* MAIN */
+
+/* CURSO */
+.curso {
+    display: inline-block;
+    width: 100%;
+    min-width: 1592px;
+    height: 510px;
+}
+
+.conteudo-esq {
+    display: inline-block;
+    color: #91A3AD;
+    margin-left: 360px;
+    width: 27%;
+}
+
+.titulo-curso {
+    font-family: 'Gotham HTF-Medium';
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.texto-curso {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.barra-reta {
+    position: absolute;
+    width: 341px;
+    border: 1px solid #616D72;
+    top: 1330px;
+    transform: rotate(90deg);
+    left: 780px;
+}
+
+.conteudo-dir {
+    display: inline-block;
+    color: #91A3AD;
+    width: 27%;
+    padding-left: 150px;
+}
+
+.titulo-curso-materias {
+    font-family: 'Gotham HTF-Bold';
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ED145B;
+    width: 268px;
+    height: 20px;
+    left: 1033px;
+    top: 1121px;
+    position: absolute;
+}
+
+.topico-1 {
+    position: absolute;
+    width: 20px;
+    height: 0px;
+    left: 1033px;
+    top: 1188px;
+    border: 1px solid #616D72;
+}
+
+.texto-materias {
+    position: absolute;
+    width: 458px;
+    height: 408px;
+    left: 1072px;
+    top: 1173px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 30px;
+    color: #616D72;
+}
+
+.topico-2 {
+    position: absolute;
+    width: 20px;
+    height: 0px;
+    left: 1033px;
+    top: 1307px;
+
+    border: 1px solid #616D72;
+}
+
+.texto-materias-2 {
+    position: absolute;
+    width: 458px;
+    height: 408px;
+    left: 1072px;
+    top: 1294px;
+
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #616D72;
+}
+ 
+
+/* MATRIZ CURRICULAR */
+.matriz {
+    display: inline-block;
+    width: 100%;
+    min-width: 1592px;
+    height: 673px;
+    margin-top: 100px;
+    max-width: 2009px;
+}
+
+.conteudo-matriz {
+    display: inline-block;
+    margin-left: 25%;
+    color: #91A3AD ;
+}
+
+.titulo-matriz {
+    font-family: 'Gotham HTF';
+    font-size: 45px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.topico-horas {
+    display: inline-block;
+    position: absolute;
+    width: 73.01px;
+    margin-top: 50px;
+    border: 1px solid #616D72;
+}
+
+.horas-matriz {
+    display: inline-block;
+    font-family: 'Gotham HTF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+
+    position: relative;
+    margin-left: 18%;
+    margin-top: 6%;
+}
+
+
+.caixa-retangulo {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 90px;
+    left: 25%;
+    margin-top: 4.5%;
+
+    border: 1px solid #91A3AD;
+}
+
+
+.ano {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #91A3AD;
+
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+.botao-menu {
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: 'Roboto';
+
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ED145B;
+    color: #ED145B;
+
+    margin-left: 91%;
+    margin-top: 2%;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+.botao-menu:hover {
+    cursor: pointer;
+    background-color: #ED145B;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.botao-menu:active {
+    transition: opacity 0.5s;
+}
+
+.caixa-retangulo-2 {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 382px;
+    left: 25%;
+    margin-top: 1%;
+
+
+    border: 1px solid #91A3AD;
+}
+
+.ano-2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #91A3AD;
+
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+.texto-menu-2 {
+    position: absolute;
+    width: 763px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #616D72;
+    margin-top: 17%;
+    margin-left: 5%;
+}
+
+.titulo-menu-2 {
+    position: absolute;
+    width: 763px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #ED145B;
+    margin-top: 11%;
+    margin-left: 5%;
+}
+
+.barra-decoracao {
+    position: absolute;
+    width: 137px;
+    right: 88.5%;
+    top: 47%;
+    
+    border: 1px solid #ED145B;
+    transform: rotate(-90deg);
+}
+
+.botao-menu-2 {
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: 'Roboto';
+
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ED145B;
+    color: #ED145B;
+
+    margin-left: 91%;
+    margin-top: 2%;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+.botao-menu-2:hover {
+    cursor: pointer;
+    background-color: #ED145B;
+    color: #000000;
+    transition: 0.5s;
+}
+
+
+/* TURMAS */
+.turmas {
+    display: inline-block;
+    width: 100%;
+    min-width: 1592px;
+    height: 478px;
+    margin-top: 151px ;
+}
+
+.texto-turmas {
+    display: inline-block;
+    margin-left: 41%;
+    color: #91A3AD ;
+}
+
+.titulo-turmas {
+    font-family: 'Gotham HTF';
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.barra-reta-turmas {
+    background: #ED145B;
+    position: absolute;
+    height: 4px;
+    width: 2%;
+    margin-top: 1%;
+    margin-left: 155px;
+}
+
+.tabela {
+    box-sizing: border-box;
+    color: #91A3AD;
+    margin-left: 25%;
+    margin-top: 8%;
+}
+
+.tabela-interna {
+    border: 1px solid #32383B;
+    width: 67%;
+    height: 216px;
+}
+
+.linha-2 {
+    border: 1px solid #32383B;
+}
+
+.dias {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    border: none;
+    justify-content: center;
+    font-family: 'Gotham HTF';
+    font-size: 14px;
+    line-height: 16px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+td {
+    border: 1px solid #32383B;
+}
+
+.header-2 {
+    font-family: 'Gotham HTF';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.header-3 {
+    width: 15%;
+    font-family: 'Gotham HTF';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ED145B;
+}
+
+.durac {
+    width: 19%;
+    font-family: 'Gotham HTF';;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.horario {
+    width: 18%;
+    font-family: 'Gotham HTF';
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+.valor {
+    width: 17%;
+    font-family: 'Gotham HTF';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.texto-tabela-valor {
+    font-family: 'Roboto';
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #616D72;
+    margin-left: 50%;
+}
+
+.botao-tabela {
+    box-sizing: border-box;
+    margin-left: 45%;
+    margin-top: 3%;
+}
+
+
+.botao-turmas {
+    border: 2px solid #ED145B;
+    background: transparent;
+
+    font-family: 'Gotham HTF';
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    color: #ED145B;
+    width: 180px;
+    height: 40px;
+}
+
+.botao-turmas:hover{
+    background-color: #ED145B;
+    color: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
